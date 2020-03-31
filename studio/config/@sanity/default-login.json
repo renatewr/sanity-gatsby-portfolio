@@ -1,13 +1,7 @@
 {
   "providers": {
-    "mode": "replace",
-    "redirectOnSingle": true,
-    "entries": [
-      {
-        "name": "google",
-        "title": "Google Amedia",
-        "url": "https://admin.api.no/sanityauth/login/google"
-      }
-    ]
+    "mode": "append",
+    "redirectOnSingle": false,
+    "entries": []
   }
 }
