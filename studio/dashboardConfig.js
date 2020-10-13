@@ -20,13 +20,13 @@ export default {
                 {
                   buildHookId: '5e832c55f5b28b1f1e0302db',
                   title: 'Sanity Studio',
-                  name: 'sanity-gatsby-portfolio-studio-x88sbftb',
+                  name: 'episoder-studio',
                   apiId: '1a83fbf1-311f-4f75-9350-94fcf1e40626'
                 },
                 {
                   buildHookId: '5e832c551e5e2bc97fd018e1',
                   title: 'Portfolio Website',
-                  name: 'sanity-gatsby-portfolio-web-o1ngz7t2',
+                  name: 'episoder',
                   apiId: '3b58a38e-dcd4-4d09-af40-b39415224b92'
                 }
               ]
@@ -41,7 +41,7 @@ export default {
           },
           {
             title: 'Frontend',
-            value: 'https://sanity-gatsby-portfolio-web-o1ngz7t2.netlify.com',
+            value: 'https://episoder.netlify.com',
             category: 'apps'
           }
         ]

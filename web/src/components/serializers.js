@@ -10,6 +10,17 @@ const serializers = {
       const {url} = node
       const id = getYouTubeId(url)
       return (<YouTube videoId={id} />)
+    },
+    flowplayervideo: ({node}) => {
+      const {video} = node
+      return (
+        <iframe
+          data-video-id={`${video.id}`}
+          src={`https://ljsp.lwcdn.com/api/video/embed.jsp?id=${video.id}`}
+          frameBorder='0'
+          title='0' byline='0' portrait='0' width='640' height='360' allow='autoplay'
+        />
+      )
     }
   }
 }

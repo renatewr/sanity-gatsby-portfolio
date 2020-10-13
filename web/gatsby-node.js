@@ -26,9 +26,9 @@ async function createProjectPages (graphql, actions, reporter) {
   if (result.errors) throw result.errors
 
   const projectEdges = (result.data.allSanitySampleProject || {}).edges || []
+  //.filter(edge => !isFuture(edge.node.publishedAt))
 
   projectEdges
-    .filter(edge => !isFuture(edge.node.publishedAt))
     .forEach(edge => {
       const id = edge.node.id
       const slug = edge.node.slug.current
