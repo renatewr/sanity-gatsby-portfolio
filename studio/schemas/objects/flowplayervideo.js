@@ -1,7 +1,4 @@
 import React from 'react'
-import getYouTubeId from 'get-youtube-id'
-import YouTube from 'react-youtube'
-
 const VideoEmbedPreview = ({value}) => {
     const {video} = value
     if(!video){
