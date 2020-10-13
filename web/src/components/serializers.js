@@ -15,8 +15,8 @@ const serializers = {
       const {video} = node
       return (
         <iframe
-          data-video-id={`${video.id}`}
-          src={`https://ljsp.lwcdn.com/api/video/embed.jsp?id=${video.id}`}
+          data-video-id={`${video}`}
+          src={`https://ljsp.lwcdn.com/api/video/embed.jsp?id=${video}`}
           frameBorder='0'
           title='0' byline='0' portrait='0' width='640' height='360' allow='autoplay'
         />

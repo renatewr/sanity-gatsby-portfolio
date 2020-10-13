@@ -49,7 +49,7 @@ export default withDocument(class VideoInput extends React.Component {
     
 
     handleChange = (value) => {
-        const inputValue = value.id
+        const inputValue = value && value.id
         const patch = inputValue === '' ? unset() : set(inputValue)
         this.props.onChange(PatchEvent.from(patch))
       }
