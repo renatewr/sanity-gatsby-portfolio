@@ -1,0 +1,12 @@
+@import "part:@sanity/base/theme/variables-style";
+
+.videoInput {
+  width: 90vw;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.videoInput li {
+  list-style: none;
+  max-width: 80vw;
+}

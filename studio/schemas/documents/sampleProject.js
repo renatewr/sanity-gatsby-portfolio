@@ -32,6 +32,11 @@ export default {
       type: 'simplePortableText'
     },
     {
+      name: 'body',
+      title: 'Body',
+      type: 'projectPortableText'
+    },
+    {
       name: 'members',
       title: 'Members',
       type: 'array',
@@ -57,11 +62,6 @@ export default {
       title: 'Categories',
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}]
-    },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'projectPortableText'
     },
     {
       name: 'relatedProjects',
