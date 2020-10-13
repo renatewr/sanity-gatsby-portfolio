@@ -18,17 +18,17 @@ export default () =>
         )
         .icon(MdSettings),
       S.listItem()
-        .title('Sample projects')
+        .title('Episoder')
         .schemaType('sampleProject')
-        .child(S.documentTypeList('sampleProject').title('Sample projects')),
+        .child(S.documentTypeList('sampleProject').title('Episoder')),
       S.listItem()
         .title('People')
         .schemaType('person')
         .child(S.documentTypeList('person').title('People')),
       S.listItem()
-        .title('Categories')
+        .title('Serier')
         .schemaType('category')
-        .child(S.documentTypeList('category').title('Categories')),
+        .child(S.documentTypeList('category').title('Serier')),
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above

@@ -2,7 +2,7 @@ import {format} from 'date-fns'
 
 export default {
   name: 'sampleProject',
-  title: 'Sample project',
+  title: 'Episoder',
   type: 'document',
   fields: [
     {
@@ -77,8 +77,8 @@ export default {
       slug: 'slug',
       media: 'mainImage'
     },
-    prepare({title = 'No title', publishedAt, slug = {}, media}) {
-      const dateSegment = format(publishedAt, 'YYYY/MM')
+    prepare ({title = 'No title', publishedAt, slug = {}, media}) {
+      const dateSegment = publishedAt ? format(publishedAt, 'YYYY/MM') : `unknown`
       const path = `/${dateSegment}/${slug.current}/`
       return {
         title,
