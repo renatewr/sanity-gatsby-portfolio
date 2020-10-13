@@ -6,8 +6,8 @@ const VideoEmbedPreview = ({value}) => {
     }
     return ( <div>
         <iframe
-          data-video-id={`${video.id}`}
-          src={`https://ljsp.lwcdn.com/api/video/embed.jsp?id=${video.id}`}
+          data-video-id={`${video}`}
+          src={`https://ljsp.lwcdn.com/api/video/embed.jsp?id=${video}`}
           frameBorder="0"
           allowFullScreen
         />    
@@ -22,15 +22,7 @@ export default {
           {
             title: 'Video',
             name: 'video',
-            type: 'object',
-            description: 'Half unicorns are okay',
-            fields: [
-              {
-                title: 'Duration',
-                name: 'duration',
-                type: 'number'
-              }
-            ]
+            type: 'string'
           }
         ],
     preview: {
