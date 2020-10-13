@@ -17,7 +17,7 @@ import projectMember from './objects/projectMember'
 import projectPortableText from './objects/projectPortableText'
 import simplePortableText from './objects/simplePortableText'
 import youtube from './objects/youtube'
-import flowplayer from './objects/flowplayer'
+import flowplayervideo from './objects/flowplayervideo'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -40,6 +40,6 @@ export default createSchema({
     sampleProject,
     siteSettings,
     youtube,
-    flowplayer
+    flowplayervideo
   ])
 })
