@@ -20,7 +20,7 @@ export const query = graphql`
     }
     projects: allSanitySampleProject(
       limit: 6
-      sort: {fields: [publishedAt], order: DESC}
+      sort: {fields: [publishedAt], order: ASC}
       filter: {slug: {current: {ne: null}}, publishedAt: {ne: null}}
     ) {
       edges {
